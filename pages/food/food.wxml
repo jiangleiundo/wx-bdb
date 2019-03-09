@@ -1,0 +1,19 @@
+<!--pages/food/food.wxml-->
+<view class='food-item bd-b' wx:for="{{shopList}}" wx:key="id">
+    <image src='{{item.images[0]}}'></image>
+    <view class='info'>
+        <text class='tit'>{{item.name}}</text>
+        <view class='score'>
+            <view class='star-pos'>
+                <view class="star {{item.star>=1?'on':''}}" bindtap='changeStar' data-flag='1'></view>
+                <view class="star {{item.star>=2?'on':''}}" bindtap='changeStar' data-flag='2'></view>
+                <view class="star {{item.star>=3?'on':''}}" bindtap='changeStar' data-flag='3'></view>
+                <view class="star {{item.star>=4?'on':''}}" bindtap='changeStar' data-flag='4'></view>
+                <view class="star {{item.star>=5?'on':''}}" bindtap='changeStar' data-flag='5'></view>
+            </view>
+            <text class='distance'>{{item.id}}km</text>
+        </view>
+        <text class='tel'>电话：{{item.phone}}</text>
+        <text class='addr'>地址：{{item.address}}</text>
+    </view>
+</view>

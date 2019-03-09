@@ -1,0 +1,24 @@
+/* pages/my/my.wxss */
+page {
+    font-size: 14px;
+    color: #777;
+    background: #efefef;
+}
+.avatar {
+    height: 300rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fefefe;
+}
+.avatar image {
+    width: 180rpx;
+    height: 180rpx;
+    border-radius: 50%;
+    border: 10rpx solid #eee;
+}
+.my-item {
+    line-height: 45px;
+    padding: 0 30rpx;
+    background: #fff;
+}

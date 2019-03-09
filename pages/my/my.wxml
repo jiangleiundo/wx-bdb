@@ -1,0 +1,14 @@
+<!--pages/my/my.wxml-->
+<view class='avatar'>
+    <image src='/assets/images/avatar.png'></image>
+</view>
+<view class='line-pub'></view>
+<navigator class='my-item bd-b'>个人资料</navigator>
+<navigator class='my-item bd-b arrow'>支付</navigator>
+<navigator class='my-item bd-b arrow'>我的优惠券</navigator>
+<view class='line-pub'></view>
+<navigator class='my-item bd-b arrow'>常见问题</navigator>
+<navigator class='my-item bd-b arrow'>使用条款</navigator>
+<navigator class='my-item bd-b arrow'>收藏</navigator>
+<view class='line-pub'></view>
+<navigator class='my-item bd-b arrow'>设置</navigator>

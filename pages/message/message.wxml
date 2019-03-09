@@ -1,0 +1,8 @@
+<!--pages/message/message.wxml-->
+<view class='card-item' wx:for="{{cardList}}">
+    <text class='tit'>{{item.tit}}</text>
+    <text class='date bd-b'>{{item.date}}</text>
+    <image mode='aspectFit' src='{{item.url}}'></image>
+    <text class='desc bd-b'>{{item.desc}}</text>
+    <view class='more arrow'>查看详情</view>
+</view>

@@ -1,0 +1,33 @@
+/**app.wxss**/
+/* .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}  */
+
+.line-pub {
+  height: 30rpx;
+  background: #efefef;
+}
+.bd-b {
+    border-bottom: 1px solid #eee;
+}
+.arrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.arrow::after {
+    content: "";
+    width: 20rpx;
+    height: 20rpx;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    transform: rotate(45deg);
+}
+
+

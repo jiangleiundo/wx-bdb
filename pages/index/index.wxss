@@ -1,0 +1,71 @@
+/**index.wxss**/
+image {
+    /*防止图片下面有空白*/
+  vertical-align: middle;
+}
+
+/* 注意：轮播图的swiper和image应该设置同样的高度，因为swiper默认150px*/
+.j-banner swiper,
+.j-banner image {
+  width: 100%;
+  height: 320rpx;
+}
+
+.nav-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-box .nav-item {
+  width: 33.3333%;
+  height: 200rpx;
+  box-sizing: border-box;
+  flex: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.nav-box .nav-item:nth-of-type(-n+6) {
+  border-bottom: 1rpx solid #eee;
+}
+.nav-box .nav-item:nth-of-type(3n+2)::before,
+.nav-box .nav-item:nth-of-type(3n+2)::after {
+  content: '';
+  height: 100%;
+  border-right: 1rpx solid #eee;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.nav-box .nav-item:nth-of-type(3n+2)::before {
+  left: 0;
+  border-left: 1rpx solid #eee;
+}
+
+.nav-item image {
+  width: 80rpx;
+  height: 80rpx;
+}
+.nav-item > text {
+  /* 小程序推荐字体使用 px */
+  font-size: 14px;
+  margin-top: 5rpx;
+}
+
+/*index-enter*/
+.index-enter {
+  display: flex;
+  padding: 30rpx 0 50rpx 0;
+}
+.index-enter .item {
+  flex: auto;
+  text-align: center;
+}
+.index-enter .item image {
+  width: 320rpx;
+  height: 178rpx;
+}
