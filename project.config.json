@@ -42,7 +42,7 @@
 				{
 					"id": 0,
 					"name": "单页调试",
-					"pathName": "pages/message/message",
+					"pathName": "pages/food/food",
 					"query": ""
 				}
 			]
