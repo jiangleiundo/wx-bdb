@@ -1,2 +1,46 @@
 <!--pages/contact/contact.wxml-->
-<text>pages/contact/contact.wxml</text>
+<view class='line-pub'></view>
+<view class='contact-item'>表单部分</view>
+<view class='line-pub'></view>
+<view class='contact-item bd-b'>
+    <input type='text' placeholder='text-默认键盘'></input>
+</view>
+<view class='contact-item bd-b'>
+    <!-- password 作为属性  -->
+    <input type='text' password placeholder='password-英文字母和数字键盘'></input>
+</view>
+<view class='contact-item bd-b'>
+    <input type='number' placeholder='number-数字键盘（无小数点）'></input>
+</view>
+<view class='contact-item bd-b'>
+    <input type='idcard' placeholder='idcard-数字键盘（无小数点、有个 X 键）'></input>
+</view>
+<view class='contact-item bd-b'>
+    <input type='digit' placeholder='digit-数字键盘（有小数点）'></input>
+</view>
+<view class='line-pub'></view>
+<view class='contact-item'>其他表单</view>
+<view class='line-pub'></view>
+<view class='contact-item bd-b'>
+    <checkbox-group>
+        <checkbox color='cyan'></checkbox>
+        <checkbox></checkbox>
+    </checkbox-group>
+</view>
+<view class='contact-item bd-b'>
+    <radio-group bindchange="radioChangeHandle" data-index="1">
+        <radio value='boy' color='cyan'>男</radio>
+        <radio value='girl'>女</radio>
+        <radio value='third' disabled>未知</radio>
+    </radio-group>
+</view>
+<view class='contact-item'>{{foo.sum(2,3)}}</view>
+
+<!-- wxs类似script，可在wxml中定义方法（不常用） -->
+<wxs module="foo">
+    module.exports = {
+        sum: function(a, b) {
+            return a + b
+        }
+    }
+</wxs>

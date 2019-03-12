@@ -17,3 +17,7 @@
         <text class='addr'>地址：{{item.address}}</text>
     </view>
 </view>
+
+<!-- loading 加载中 -->
+<view class='loading-txt loading' wx:if="{{loading}}">加载中...</view>
+<view class='loading-txt' wx:else>没有更多数据了</view>

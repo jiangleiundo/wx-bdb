@@ -1,1 +1,8 @@
 /* pages/contact/contact.wxss */
+page {
+    font-size: 14px;
+}
+.contact-item {
+    padding: 20rpx 30rpx;
+}
+

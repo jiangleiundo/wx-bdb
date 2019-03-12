@@ -7,11 +7,22 @@ Page({
     data: {
 
     },
+    // radio事件绑定
+    radioChangeHandle: function(e){
+        console.log(e);
+        console.log(e.detail.value);
+        console.log(e.currentTarget.dataset.index);
+    },
+
+
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
+        // wx.makePhoneCall({
+        //     phoneNumber: '17001103636',
+        // })
 
     },
 

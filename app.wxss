@@ -36,7 +36,7 @@
 
 /*loading css*/
 
-.loading {
+.loading-txt {
     color: #999;
     /* font-size: 30px; */
     line-height: 100rpx;

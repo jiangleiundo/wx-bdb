@@ -8,7 +8,7 @@
 </view>
 <!-- index导航 -->
 <view class='nav-box'>
-    <navigator class='nav-item' url="{{'/pages/food/food?cat=' + item.id}}" wx:for="{{ navList }}" wx:key="id">
+    <navigator class='nav-item' url="{{'/pages/food/food?cat=' + item.id + '&title=' + item.name}}" wx:for="{{ navList }}" wx:key="id">
         <image src='{{item.icon}}'></image>
         <text>{{item.name}}</text>
     </navigator>
